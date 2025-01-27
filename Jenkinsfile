@@ -6,6 +6,7 @@ node {
     }
 
      stage('Gradle Build') {
+       sh 'chmod +x gradlew'
 
        sh './gradlew build'
 
